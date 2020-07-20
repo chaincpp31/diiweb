@@ -1,0 +1,243 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  overflow-x: hidden;
+}
+html p,
+body p {
+  margin: 0;
+}
+html a,
+body a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #231f20;
+  position: sticky;
+  top: 0;
+  padding: 6px 36px;
+  z-index: 30;
+  display: flex;
+}
+.navbar .imageLogo img {
+  width: 100px;
+}
+.navbar a {
+  margin: auto 28px;
+  text-decoration: none;
+  color: white;
+}
+
+.videoWrapper {
+  height: 87%;
+}
+.videoWrapper video {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.container {
+  padding: 10% 3%;
+  margin: 3% 3%;
+}
+.container h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.Information .containerInform {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.Information .containerInform .IMG1 {
+  padding-left: 0%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 395px;
+  overflow: hidden;
+  text-align: center;
+  margin: 24px 28px;
+  width: 26%;
+}
+.Information .containerInform .IMG1 p {
+  margin-bottom: 15px;
+  color: white;
+}
+.Information .containerInform .IMG1 img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
+.Information .containerInform .IMG1 img {
+  margin-bottom: 25px;
+  transition: TRANSFORM 0.7s;
+}
+.Information .containerInform .IMG1 img:hover {
+  transform: scale(1.05);
+  z-index: -1 !important;
+}
+.Information .containerInform .IMG1 a {
+  text-decoration: none;
+  font-size: 18.2px;
+  color: white;
+}
+.Information .containerInform .IMG1 a:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+.Information .containerInform .IMG1 .READ1 i {
+  margin-right: 4px;
+  font-size: 24px;
+}
+.Information .containerInform .IMG1 .READ1 p {
+  margin: auto 0;
+}
+.Information .containerInform .IMG1 .READ1 a {
+  font-size: 16px;
+}
+.Information .containerInform .IMG1 .READ1:hover {
+  color: #fff;
+}
+.Information .containerInform .IMG1 .vacation {
+  padding-bottom: 16px;
+}
+
+.ContactWrapper {
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ContactWrapper p {
+  padding: 15px 0 15px;
+  width: 336px;
+}
+.ContactWrapper strong {
+  font-size: 24px;
+}
+.ContactWrapper a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.ContactWrapper a:hover {
+  color: #da1f26;
+}
+.ContactWrapper img {
+  width: 15px;
+  height: 15px;
+}
+.ContactWrapper .BACK i {
+  width: 16px;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 4px;
+}
+.ContactWrapper .BoxCenter {
+  margin-left: 117px;
+}
+.ContactWrapper .BoxCenter .insidelow {
+  flex-direction: row;
+  display: flex;
+}
+.ContactWrapper .BoxCenter .insidelow input[type=text] {
+  font-size: 16px;
+  width: 405.26px;
+  border-radius: 5px;
+  border: solid 1px;
+  margin-right: 17px;
+  outline: none;
+  padding: 12px 0px 12px 7px;
+}
+.ContactWrapper .BoxCenter .insidelow input[type=text]:hover {
+  border-color: #858585;
+}
+.ContactWrapper .BoxCenter .insidelow input[type=email] {
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 1px;
+  width: 405.26px;
+  outline: none;
+  padding: 12px 0px 12px 7px;
+}
+.ContactWrapper .BoxCenter .insidelow input[type=email]:hover {
+  border-color: #858585;
+}
+.ContactWrapper textarea {
+  width: 837px;
+  height: 262px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: solid 1px;
+  font-size: 16px;
+  outline: none;
+  padding: 7px 0px 10px 7px;
+  resize: none;
+}
+.ContactWrapper textarea:hover {
+  border-color: #858585;
+}
+.ContactWrapper .message {
+  display: flex;
+  justify-content: center;
+  padding-top: 9px;
+  padding-bottom: 125px;
+  margin-right: 481px;
+}
+.ContactWrapper .message a {
+  background-color: #858585;
+  border-radius: 5px;
+  padding: 10px 150px 10px 150px;
+  border: 1px #858585 solid;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.ContactWrapper .message a:hover {
+  color: #858585;
+  border-color: #858585;
+  background-color: white;
+}
+
+.footer {
+  background-color: #231f20;
+}
+.footer .con4 {
+  padding: 26px 0px 0px;
+  margin: 0 75.2px;
+  text-align: center;
+}
+.footer .con4 img {
+  width: 10%;
+}
+.footer .icon {
+  text-align: center;
+  margin: 0px 47%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .icon i {
+  font-size: 30px;
+  color: white;
+}
+.footer .icon i:hover {
+  color: #858585;
+}
+.footer .copyRight {
+  background-color: #231f20;
+  height: 25px;
+  color: white;
+  padding: 20px 0 26px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=GlobalStyle.css.map */
