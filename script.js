@@ -36,10 +36,11 @@ var freshMan = [
 ];
 */
 // Global variable for storing member container.
-var container = document.querySelector("div.w3-row-padding.w3-center.w3-section");
+//var container = document.querySelector("div.w3-row-padding.w3-center.w3-section");
 // Action declared and called after the page has been loaded.
 // In case of Javascript being disabled, we will load default page.
-$(document).ready(function () {
+//$(document).ready(function () {
+  /*
     // Call method for clearing the container.
     clearContainer();
     // Load all "members" elements by default.
@@ -54,7 +55,7 @@ $(document).ready(function () {
         // Cancel the default "action" designation.
         return false;
     });
-
+*/
     // Overwrite default scroll teleport animation.
     var scrollTeleport = $('.scroll');
     // Adding event listener to "scrollTeleport".
@@ -66,7 +67,7 @@ $(document).ready(function () {
             scrollTop: $(this.hash).offset().top
         }, 750);
     });
-
+/*
     // Set constant for reference to nav bar and reference point.
     const navBar = document.querySelector('.nav__observation');
     const trigger = document.querySelector('.nav__reference');
@@ -89,8 +90,9 @@ $(document).ready(function () {
 
     // Assign event oberver target for oberver to look for.
     navBarObserver.observe(trigger);
-});
-
+    */
+//});
+/*
 // Modal Image Gallery
 function onClick(element) {
     document.getElementById("img01").src = element.src;
@@ -100,7 +102,6 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-/*
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -110,7 +111,6 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
 }
-*/
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
@@ -173,3 +173,4 @@ function toggleSearchMenu() {
     $(".back__wall").toggle('deactivated');
     $(".search__box").toggle('deactivated');
 }
+*/
