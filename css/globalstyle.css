@@ -62,7 +62,7 @@ body a {
 .Information .containerInform .IMG1 {
   padding-left: 0%;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 395px;
+  height: 100%;
   overflow: hidden;
   text-align: center;
   margin: 24px 28px;
