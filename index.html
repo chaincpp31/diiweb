@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/globalstyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,7 +72,7 @@
 
             <div class="IMG1">
 
-                <img src="./img/ice.jpg">
+                <img src="./img/ice.jpg" style="width:100%" onclick="o	nClick(this)" class="w3-hover-opacity" alt="ไอซ์">
                 <p>622110318</p>
 
                 <p>กรวิชญ์ วิไลรัตน์</p>
@@ -683,7 +684,16 @@
         </div>
 
     </div>
+    <script>
+        function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+    </script>
     <script type="script.js">
+        
 
     </script>
 
