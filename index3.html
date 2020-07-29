@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+    $(document).ready(function () {
+
+        $("#createUser").click(function () {
+            var name = $("#name").val();
+            var username = $("#username").val();
+            var password = $("#password").val();
+
+
+
+            $.ajax({
+                url: "createUser.php?name=" + name + "&user=" + username + "&pass=" + password +
+                    "",
+                success: function (result) {
+                    //alert(result)
+                }
+            });
+        });
+    });
+</script>
+
+<body>
+    <div id="showname"></div>
+    <div id="showage"></div>
+    <input type="text" id='name' />
+    <input type="text" id='username' />
+    <input type="text" id='password' />
+
+    <button id="createUser">123456</button>
+
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="./img/ice.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ไอซ์">
+            <p>622110318</p>
+            <p> กรวิชญ์ วิไลรัตน์</p>
+            <p>Facebook: korawit wilairat</p>
+            <p>.</p>
+            <p>น้องรหัส: นาย ยุทธศักดิ์ ปารมาลย์</p>
+            <p>น้องเทค: </p>
+        </div>
+        <div class="w3-col m3">
+            <img src="./img/ice.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ไอซ์">
+            <p>622110318</p>
+            <p> กรวิชญ์ วิไลรัตน์</p>
+            <p>Facebook: korawit wilairat</p>
+            <p>.</p>
+            <p>น้องรหัส: นาย ยุทธศักดิ์ ปารมาลย์</p>
+            <p>น้องเทค: </p>
+        </div>
+    </div>
+    <script>
+        var arrayUser = [
+        {id:622110318,nickname:"ไอซ์",name: "กรวิชญ์ วิไลรัตน์",Facebook: "korawit wilairat",juniorid: ""},
+        {id:622110318,nickname:"ไอซ์2",name: "กรวิชญ์ วิไลรัตน์",age: 26},
+        {id:622110318,nickname:"ไอซ์3",name: "กรวิชญ์ วิไลรัตน์",age: 26},
+        {id:622110318,nickname:"ไอซ์4",name: "กรวิชญ์ วิไลรัตน์",age: 26},
+        {id:622110318,nickname:"ไอซ์5",name: "กรวิชญ์ วิไลรัตน์",age: 26},
+        {id:622110318,nickname:"ไอซ์6",name: "กรวิชญ์ วิไลรัตน์",age: 26},
+        ]
+        console.log(arrayUser)
+        for (let i = 0; i < arrayUser.length; i++) {
+            $("#showname").append("<div class='w3-row-padding w3-center'><div class='w3-col m3'><img src='./img/ice.jpg' style='width:100%' onclick='onClick(this)' class='w3-hover-opacity' alt='"+arrayUser[i].nickname+"'><div class='w3-col m3'><p>"+arrayUser[i].nickname+"</p><p>" + arrayUser[i].id + "</p><p>Facebook:"+arrayUser[i].Facebook+"</p><p>"+arrayUser[i].juniorid+"</p></div></div></div>");
+        }
+
+
+
+        //document.getElementById("showname").innerHTML = "<div id='test'>"+arrayUser[0].name+"</div>";
+        //document.getElementById("showage").innerHTML = arrayUser[0].age;
+    </script>
+</body>
+
+</html>
